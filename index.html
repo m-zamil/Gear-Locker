@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GearLocker</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jys7hta.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/wqe4zqp.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img src="./assets/images/logo.svg" alt="GearLocker Logo" />
+      </a>
+
+      <button class="header__hamburger" id="hamburger-menu" aria-label="Open Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="8" viewBox="0 0 17 8">
+          <g id="Group_7029" data-name="Group 7029" transform="translate(-19.5 -22.5)">
+            <line id="Line_16" data-name="Line 16" x2="15" transform="translate(20.5 23.5)" fill="none" stroke="#1d1815" stroke-linecap="round" stroke-width="2" />
+            <line id="Line_17" data-name="Line 17" x2="15" transform="translate(20.5 29.5)" fill="none" stroke="#1d1815" stroke-linecap="round" stroke-width="2" />
+          </g>
+        </svg>
+      </button>
+
+      <nav class="header__nav" id="nav-menu">
+        <a href="/" class="nav__logo">
+          <img src="./assets/images/logo.svg" alt="GearLocker Logo" />
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">How It Works</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Schedule a Demo</a></li>
+        </ul>
+        <a href="#" class="nav__login-btn">Log In</a>
+      </nav>
+
+      <div class="header__overlay"></div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__image">
+          <picture>
+            <!-- For large screens (desktops) -->
+            <source srcset="/assets/images/sports-gear-desktop-1x.webp 1x, /assets/images/sports-gear-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+            <source srcset="./assets/images/sports-gear-desktop-1x.png 1x, ./assets/images/sports-gear-desktop-2x.png 2x" media="(min-width: 1024px)" />
+
+            <!-- For small screens (mobile) -->
+            <source srcset="./assets/images/sports-gear-mobile-1x.webp 1x, ./assets/images/sports-gear-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+            <source srcset="./assets/images/sports-gear-mobile-1x.png 1x, ./assets/images/sports-gear-mobile-2x.png 2x" media="(max-width: 1023px)" />
+
+            <!-- Fallback image if webp is not supported -->
+            <img src="./assets/images/sports-gear-desktop-1x.png" alt="Sports Gear" />
+          </picture>
+        </div>
+        <div class="hero__text">
+          <h1 class="hero__title"
+            >Streamline <br />
+            Your Sports Gear <br />
+            Management with <br />
+            GearLocker</h1
+          >
+          <p class="hero__description">Say Goodbye to Manual Spreadsheets — Discover a Smarter, More Efficient Way to Manage, Distribute, and Account for School-Owned Equipment.</p>
+          <a href="#" class="hero__cta-button">Book Your Demo Now</a>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features__header">
+          <h2 class="features__headline">Track, Manage & Reduce Equipment Liability & Costs</h2>
+          <p class="features__subhead">Gear Locker is the ultimate solution for high school sports teams and programs to manage inventory with ease. Our software eliminates the headaches of manually tracking gear, saving your school time and money by ensuring every piece of equipment is accounted for.</p>
+        </div>
+        <div class="features__items">
+          <div class="features__item features__item--efficient">
+            <div class="features__image">
+              <picture>
+                <!-- For large screens (desktops) -->
+                <source srcset="./assets/images/efficient-inventory-desktop-1x.webp 1x, ./assets/images/efficient-inventory-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+                <source srcset="./assets/images/efficient-inventory-desktop-1x.png 1x, ./assets/images/efficient-inventory-desktop-2x.png 2x" media="(min-width: 1024px)" />
+
+                <!-- For small screens (mobile) -->
+                <source srcset="./assets/images/efficient-inventory-mobile-1x.webp 1x, ./assets/images/efficient-inventory-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+                <source srcset="./assets/images/efficient-inventory-mobile-1x.png 1x, ./assets/images/efficient-inventory-mobile-2x.png 2x" media="(max-width: 1023px)" />
+
+                <!-- Fallback image if webp is not supported -->
+                <img src="./assets/images/efficient-inventory-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-1" />
+              </picture>
+            </div>
+            <div class="features__text">
+              <h2 class="features__title">Efficient Inventory Management</h2>
+              <p class="features__description"> Easily create and manage your entire inventory of sports gear, uniforms, band instruments, and more. </p>
+              <a href="#" class="features__cta">Book Your Demo Now</a>
+            </div>
+          </div>
+          <div class="features__item features__item--automated">
+            <div class="features__image">
+              <picture>
+                <!-- For large screens (desktops) -->
+                <source srcset="./assets/images/automated-checkout-desktop-1x.webp 1x, ./assets/images/automated-checkout-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+                <source srcset="./assets/images/automated-checkout-desktop-1x.png 1x, ./assets/images/automated-checkout-desktop-2x.png 2x" media="(min-width: 1024px)" />
+
+                <!-- For small screens (mobile) -->
+                <source srcset="./assets/images/automated-checkout-mobile-1x.webp 1x, ./assets/images/automated-checkout-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+                <source srcset="./assets/images/automated-checkout-mobile-1x.png 1x, ./assets/images/automated-checkout-mobile-2x.png 2x" media="(max-width: 1023px)" />
+
+                <!-- Fallback image if webp is not supported -->
+                <img src="./assets/images/automated-checkout-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-2" />
+              </picture>
+            </div>
+            <div class="features__text">
+              <h2 class="features__title">Automated Check-Out and Check-In</h2>
+              <p class="features__description"> Streamline the process of distributing and collecting gear. No more lost items due to manual errors or oversight. </p>
+              <a href="#" class="features__cta">Book Your Demo Now</a>
+            </div>
+          </div>
+          <div class="features__item features__item--reporting">
+            <div class="features__image">
+              <picture>
+                <!-- For large screens (desktops) -->
+                <source srcset="./assets/images/powerful-reporting-desktop-1x.webp 1x, ./assets/images/powerful-reporting-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+                <source srcset="./assets/images/powerful-reporting-desktop-1x.png 1x, ./assets/images/powerful-reporting-desktop-2x.png 2x" media="(min-width: 1024px)" />
+
+                <!-- For small screens (mobile) -->
+                <source srcset="./assets/images/powerful-reporting-mobile-1x.webp 1x, ./assets/images/powerful-reporting-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+                <source srcset="./assets/images/powerful-reporting-mobile-1x.png 1x, ./assets/images/powerful-reporting-mobile-2x.png 2x" media="(max-width: 1023px)" />
+
+                <!-- Fallback image if webp is not supported -->
+                <img src="./assets/images/powerful-reporting-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-3" />
+              </picture>
+            </div>
+            <div class="features__text">
+              <h2 class="features__title">Powerful Reporting</h2>
+              <p class="features__description"> Generate reports at the team, school, or district level to identify which students have not returned their gear and real time accounting of all inventory. </p>
+              <a href="#" class="features__cta">Book Your Demo Now</a>
+            </div>
+          </div>
+          <div class="features__item features__item--stay-safe">
+            <div class="features__image">
+              <picture>
+                <!-- For large screens (desktops) -->
+                <source srcset="./assets/images/stay-safe-desktop-1x.webp 1x, ./assets/images/stay-safe-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+                <source srcset="./assets/images/stay-safe-desktop-1x.png 1x, ./assets/images/stay-safe-desktop-2x.png 2x" media="(min-width: 1024px)" />
+
+                <!-- For small screens (mobile) -->
+                <source srcset="./assets/images/stay-safe-mobile-1x.webp 1x, ./assets/images/stay-safe-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+                <source srcset="./assets/images/stay-safe-mobile-1x.png 1x, ./assets/images/stay-safe-mobile-2x.png 2x" media="(max-width: 1023px)" />
+
+                <!-- Fallback image if webp is not supported -->
+                <img src="./assets/images/stay-safe-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-4" />
+              </picture>
+            </div>
+            <div class="features__text">
+              <h2 class="features__title"
+                >Stay Safe. <br />
+                Stay Compliant.</h2
+              >
+              <p class="features__description"> Gear Locker helps schools stay compliant by tracking the age of gear and documenting regular safety checks. Ensure your equipment meets safety standards, reducing liability risks and protecting your athletes with up-to-date servicing records. </p>
+              <a href="#" class="features__cta">Book Your Demo Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits__container">
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <img src="./assets/images/calendar.svg" alt="Track icon" />
+            </div>
+            <p class="benefits__description">Track who has what, and when it's due back, with just a few clicks.</p>
+          </div>
+
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <img src="./assets/images/accountable.svg" alt="Accountability icon" />
+            </div>
+            <p class="benefits__description">Hold students accountable and reduce the cost of replacing lost items.</p>
+          </div>
+
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <img src="./assets/images/realtime.svg" alt="Real-time icon" />
+            </div>
+            <p class="benefits__description">Keep a real-time source of truth for all school-owned property across teams and departments.</p>
+          </div>
+
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <img src="./assets/images/returned.svg" alt="Return icon" />
+            </div>
+            <p class="benefits__description">Ensure that all gear is returned, reducing the need for costly replacements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container">
+        <h2 class="pricing__title">Pricing Plans</h2>
+
+        <div class="pricing__container">
+          <!-- Individual Teams Plan -->
+          <div class="pricing__card pricing__card--individual">
+            <h3 class="pricing__card-title">For Individual Teams</h3>
+            <p class="pricing__card-subtitle">Best suited for small teams</p>
+            <p class="pricing__price">$199<span>/year</span></p>
+            <p class="pricing__features-title">Key features</p>
+            <ul class="pricing__features-list">
+              <li class="pricing__features-item">Manage your inventory</li>
+              <li class="pricing__features-item">Check in and check out</li>
+              <li class="pricing__features-item">Team reporting</li>
+            </ul>
+            <a href="#" class="pricing__cta">Book Your Demo Now</a>
+          </div>
+
+          <!-- Schools Plan -->
+          <div class="pricing__card pricing__card--schools">
+            <h3 class="pricing__card-title">For Schools</h3>
+            <p class="pricing__card-subtitle">Use GearLocker across all your programs</p>
+            <p class="pricing__price">$1,499<span>/year</span></p>
+            <p class="pricing__features-title">Key features</p>
+            <ul class="pricing__features-list">
+              <li class="pricing__features-item">Use GearLocker across all your teams</li>
+              <li class="pricing__features-item">Manage inventory for all sports</li>
+              <li class="pricing__features-item">Assign coaches</li>
+              <li class="pricing__features-item">Check in and check out</li>
+              <li class="pricing__features-item">Both team reporting and school-wide reporting</li>
+            </ul>
+            <a href="#" class="pricing__cta pricing__cta--schools">Book Your Demo Now</a>
+          </div>
+
+          <!-- Districts Plan -->
+          <div class="pricing__card pricing__card--districts">
+            <h3 class="pricing__card-title">For Districts</h3>
+            <p class="pricing__card-subtitle">Bring GearLocker to the entire district</p>
+            <p class="pricing__price">Contact for Pricing</p>
+            <p class="pricing__features-title">Key features</p>
+            <ul class="pricing__features-list">
+              <li class="pricing__features-item">Use GearLocker across all your schools</li>
+              <li class="pricing__features-item">Manage inventory for all sports</li>
+              <li class="pricing__features-item">Assign coaches</li>
+              <li class="pricing__features-item">Check in and check out</li>
+              <li class="pricing__features-item">Team, school, and district-wide reporting</li>
+            </ul>
+            <a href="#" class="pricing__cta pricing__cta--contact">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="faq__title">FAQs</h2>
+        <div class="faq__items__wrapper">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+              <span>What is Gear Locker?</span>
+            </button>
+            <div class="faq__answer">
+              <p>Gear Locker is a software solution designed to help high school sports teams and programs manage their inventory of school-owned equipment efficiently.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+              <span>How does Gear Locker simplify inventory management?</span>
+            </button>
+            <div class="faq__answer">
+              <p>Gear Locker simplifies inventory management by tracking who has what and when it's due back with just a few clicks.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+              <span>Can Gear Locker help prevent lost items?</span>
+            </button>
+            <div class="faq__answer">
+              <p>Gear Locker is a software solution designed to help high school sports teams and programs manage their inventory of school-owned equipment efficiently.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+              <span>What types of equipment can I manage with Gear Locker?</span>
+            </button>
+            <div class="faq__answer">
+              <p>Gear Locker simplifies inventory management by tracking who has what and when it's due back with just a few clicks.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+              <span>How does reporting work in Gear Locker?</span>
+            </button>
+            <div class="faq__answer">
+              <p>Gear Locker simplifies inventory management by tracking who has what and when it's due back with just a few clicks.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+              <span>Will using Gear Locker save my school money?</span>
+            </button>
+            <div class="faq__answer">
+              <p>Gear Locker simplifies inventory management by tracking who has what and when it's due back with just a few clicks.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+              <span>Is there a free demo available?</span>
+            </button>
+            <div class="faq__answer">
+              <p>Gear Locker simplifies inventory management by tracking who has what and when it's due back with just a few clicks.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+              <span>How can I book a demo?</span>
+            </button>
+            <div class="faq__answer">
+              <p>Gear Locker simplifies inventory management by tracking who has what and when it's due back with just a few clicks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more FAQ items as needed -->
+      </div>
+    </section>
+    <!-- Demo Callout -->
+    <section class="demo-callout">
+      <div class="container">
+        <div class="demo-callout__wrapper">
+          <img src="./assets/images/gearlocker-logo.svg" alt="gearlocker logo" class="demo-callout__logo" />
+          <h2 class="demo-callout__title">Ready to Make Gear Management Effortless?</h2>
+          <p class="demo-callout__description">Schedule a free demo today and see how Gear Locker can transform your school’s equipment management process.</p>
+          <a href="#" class="demo-callout__button">Book Your Demo Now</a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__copyright">
+            <p>Copyright © 2024 GearLocker. All rights reserved.</p>
+          </div>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><img src="./assets/images/icon-facebook.svg" alt="" /></a>
+            <a href="#" aria-label="Twitter"><img src="./assets/images/icon-twitter.svg" alt="" /></a>
+            <a href="#" aria-label="LinkedIn"><img src="./assets/images/icon-linkedin.svg" alt="" /></a>
+          </div>
+          <div class="footer__links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script for mobile menu-->
+    <script>
+      const hamburgerMenu = document.getElementById('hamburger-menu');
+      const navMenu = document.getElementById('nav-menu');
+      const overlay = document.querySelector('.header__overlay');
+      const body = document.body;
+
+      // Toggle sidebar and overlay
+      hamburgerMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('header__nav--active');
+        overlay.classList.toggle('header__overlay--active');
+        body.classList.toggle('body--menu-open'); // Disable scroll
+      });
+
+      // Close menu and overlay when clicking outside the sidebar or on links
+      overlay.addEventListener('click', closeMenu);
+      navMenu.querySelectorAll('.nav__link').forEach((link) => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      // Function to close the menu
+      function closeMenu() {
+        navMenu.classList.remove('header__nav--active');
+        overlay.classList.remove('header__overlay--active');
+        body.classList.remove('body--menu-open'); // Re-enable scroll
+      }
+    </script>
+    <!-- Script for FAQs Section -->
+    <script>
+      const faqItems = document.querySelectorAll('.faq__item');
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector('.faq__question');
+        const answer = item.querySelector('.faq__answer');
+
+        question.addEventListener('click', () => {
+          const isExpanded = question.getAttribute('aria-expanded') === 'true';
+
+          // Toggle aria-expanded attribute
+          question.setAttribute('aria-expanded', !isExpanded);
+
+          // Show or hide the answer
+          answer.style.display = isExpanded ? 'none' : 'block';
+        });
+      });
+    </script>
+  </body>
+</html>
