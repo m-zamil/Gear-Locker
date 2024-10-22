@@ -11,354 +11,358 @@
 
     <link href="./assets/images/glfavicon.png" rel="icon" type="image/x-icon" />
 
+    <link rel="preconnect" href="https://use.typekit.net/" />
     <link rel="stylesheet" href="https://use.typekit.net/jys7hta.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <a href="/" class="header__logo">
-        <img src="./assets/images/logo.svg" alt="GearLocker Logo" />
-      </a>
-
-      <button class="header__hamburger" id="hamburger-menu" aria-label="Open Menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="8" viewBox="0 0 17 8">
-          <g id="Group_7029" data-name="Group 7029" transform="translate(-19.5 -22.5)">
-            <line id="Line_16" data-name="Line 16" x2="15" transform="translate(20.5 23.5)" fill="none" stroke="#1d1815" stroke-linecap="round" stroke-width="2" />
-            <line id="Line_17" data-name="Line 17" x2="15" transform="translate(20.5 29.5)" fill="none" stroke="#1d1815" stroke-linecap="round" stroke-width="2" />
-          </g>
-        </svg>
-      </button>
-
-      <nav class="header__nav" id="nav-menu">
-        <a href="/" class="nav__logo">
+      <div class="header__wrapper">
+        <a href="/" class="header__logo">
           <img src="./assets/images/logo.svg" alt="GearLocker Logo" />
         </a>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#features" class="nav__link">How It Works</a></li>
-          <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
-          <li class="nav__item"><a href="https://calendly.com/cnabity/gearlocker-demo" class="nav__link">Schedule a Demo</a></li>
-        </ul>
-        <a href="#" class="nav__login-btn">Log In</a>
-      </nav>
 
-      <div class="header__overlay"></div>
+        <button class="header__hamburger" id="hamburger-menu" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="8" viewBox="0 0 17 8">
+            <g id="Group_7029" data-name="Group 7029" transform="translate(-19.5 -22.5)">
+              <line id="Line_16" data-name="Line 16" x2="15" transform="translate(20.5 23.5)" fill="none" stroke="#1d1815" stroke-linecap="round" stroke-width="2" />
+              <line id="Line_17" data-name="Line 17" x2="15" transform="translate(20.5 29.5)" fill="none" stroke="#1d1815" stroke-linecap="round" stroke-width="2" />
+            </g>
+          </svg>
+        </button>
+
+        <nav class="header__nav" id="nav-menu">
+          <a href="/" class="nav__logo">
+            <img src="./assets/images/logo.svg" alt="GearLocker Logo" />
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#features" class="nav__link">How It Works</a></li>
+            <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+            <li class="nav__item"><a href="https://calendly.com/cnabity/gearlocker-demo" class="nav__link">Schedule a Demo</a></li>
+          </ul>
+          <button class="nav__login-btn" id="open-modal-btn">Log In</button>
+        </nav>
+
+        <div class="header__overlay"></div>
+      </div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__image">
+            <picture>
+              <!-- For large screens (desktops) -->
+              <source srcset="./assets/images/sports-gear-desktop-1x.webp 1x, ./assets/images/sports-gear-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+              <source srcset="./assets/images/sports-gear-desktop-1x.png 1x, ./assets/images/sports-gear-desktop-2x.png 2x" media="(min-width: 1024px)" />
 
-    <section class="hero">
-      <div class="container">
-        <div class="hero__image">
-          <picture>
-            <!-- For large screens (desktops) -->
-            <source srcset="./assets/images/sports-gear-desktop-1x.webp 1x, ./assets/images/sports-gear-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
-            <source srcset="./assets/images/sports-gear-desktop-1x.png 1x, ./assets/images/sports-gear-desktop-2x.png 2x" media="(min-width: 1024px)" />
+              <!-- For small screens (mobile) -->
+              <source srcset="./assets/images/sports-gear-mobile-1x.webp 1x, ./assets/images/sports-gear-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+              <source srcset="./assets/images/sports-gear-mobile-1x.png 1x, ./assets/images/sports-gear-mobile-2x.png 2x" media="(max-width: 1023px)" />
 
-            <!-- For small screens (mobile) -->
-            <source srcset="./assets/images/sports-gear-mobile-1x.webp 1x, ./assets/images/sports-gear-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
-            <source srcset="./assets/images/sports-gear-mobile-1x.png 1x, ./assets/images/sports-gear-mobile-2x.png 2x" media="(max-width: 1023px)" />
-
-            <!-- Fallback image if webp is not supported -->
-            <img src="./assets/images/sports-gear-desktop-1x.png" alt="Sports Gear" />
-          </picture>
-        </div>
-        <div class="hero__text">
-          <h1 class="hero__title"
-            >Streamline <br />
-            Your Sports Gear <br />
-            Management with <br />
-            GearLocker</h1
-          >
-          <p class="hero__description">Say Goodbye to Manual Spreadsheets — Discover a Smarter, More Efficient Way to Manage, Distribute, and Account for School-Owned Equipment.</p>
-          <a href="https://calendly.com/cnabity/gearlocker-demo" class="hero__cta-button">Book Your Demo Now</a>
-        </div>
-      </div>
-    </section>
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <div class="container">
-        <div class="features__header">
-          <h2 class="features__headline">Track, Manage & Reduce Equipment Liability & Costs</h2>
-          <p class="features__subhead">Gear Locker is the ultimate solution for high school sports teams and programs to manage inventory with ease. Our software eliminates the headaches of manually tracking gear, saving your school time and money by ensuring every piece of equipment is accounted for.</p>
-        </div>
-        <div class="features__items">
-          <div class="features__item features__item--efficient">
-            <div class="features__image">
-              <picture>
-                <!-- For large screens (desktops) -->
-                <source srcset="./assets/images/efficient-inventory-desktop-1x.webp 1x, ./assets/images/efficient-inventory-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
-                <source srcset="./assets/images/efficient-inventory-desktop-1x.png 1x, ./assets/images/efficient-inventory-desktop-2x.png 2x" media="(min-width: 1024px)" />
-
-                <!-- For small screens (mobile) -->
-                <source srcset="./assets/images/efficient-inventory-mobile-1x.webp 1x, ./assets/images/efficient-inventory-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
-                <source srcset="./assets/images/efficient-inventory-mobile-1x.png 1x, ./assets/images/efficient-inventory-mobile-2x.png 2x" media="(max-width: 1023px)" />
-
-                <!-- Fallback image if webp is not supported -->
-                <img src="./assets/images/efficient-inventory-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-1" />
-              </picture>
-            </div>
-            <div class="features__text">
-              <h2 class="features__title">Efficient Inventory Management</h2>
-              <p class="features__description"> Easily create and manage your entire inventory of sports gear, uniforms, band instruments, and more. </p>
-              <a href="https://calendly.com/cnabity/gearlocker-demo" class="features__cta">Book Your Demo Now</a>
-            </div>
+              <!-- Fallback image if webp is not supported -->
+              <img src="./assets/images/sports-gear-desktop-1x.png" alt="Sports Gear" />
+            </picture>
           </div>
-          <div class="features__item features__item--automated">
-            <div class="features__image">
-              <picture>
-                <!-- For large screens (desktops) -->
-                <source srcset="./assets/images/automated-checkout-desktop-1x.webp 1x, ./assets/images/automated-checkout-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
-                <source srcset="./assets/images/automated-checkout-desktop-1x.png 1x, ./assets/images/automated-checkout-desktop-2x.png 2x" media="(min-width: 1024px)" />
-
-                <!-- For small screens (mobile) -->
-                <source srcset="./assets/images/automated-checkout-mobile-1x.webp 1x, ./assets/images/automated-checkout-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
-                <source srcset="./assets/images/automated-checkout-mobile-1x.png 1x, ./assets/images/automated-checkout-mobile-2x.png 2x" media="(max-width: 1023px)" />
-
-                <!-- Fallback image if webp is not supported -->
-                <img src="./assets/images/automated-checkout-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-2" />
-              </picture>
-            </div>
-            <div class="features__text">
-              <h2 class="features__title">Automated Check-Out and Check-In</h2>
-              <p class="features__description"> Streamline the process of distributing and collecting gear. No more lost items due to manual errors or oversight. </p>
-              <a href="https://calendly.com/cnabity/gearlocker-demo" class="features__cta">Book Your Demo Now</a>
-            </div>
-          </div>
-          <div class="features__item features__item--reporting">
-            <div class="features__image">
-              <picture>
-                <!-- For large screens (desktops) -->
-                <source srcset="./assets/images/powerful-reporting-desktop-1x.webp 1x, ./assets/images/powerful-reporting-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
-                <source srcset="./assets/images/powerful-reporting-desktop-1x.png 1x, ./assets/images/powerful-reporting-desktop-2x.png 2x" media="(min-width: 1024px)" />
-
-                <!-- For small screens (mobile) -->
-                <source srcset="./assets/images/powerful-reporting-mobile-1x.webp 1x, ./assets/images/powerful-reporting-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
-                <source srcset="./assets/images/powerful-reporting-mobile-1x.png 1x, ./assets/images/powerful-reporting-mobile-2x.png 2x" media="(max-width: 1023px)" />
-
-                <!-- Fallback image if webp is not supported -->
-                <img src="./assets/images/powerful-reporting-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-3" />
-              </picture>
-            </div>
-            <div class="features__text">
-              <h2 class="features__title">Powerful Reporting</h2>
-              <p class="features__description"> Generate reports at the team, school, or district level to identify which students have not returned their gear and real time accounting of all inventory. </p>
-              <a href="https://calendly.com/cnabity/gearlocker-demo" class="features__cta">Book Your Demo Now</a>
-            </div>
-          </div>
-          <div class="features__item features__item--stay-safe">
-            <div class="features__image">
-              <picture>
-                <!-- For large screens (desktops) -->
-                <source srcset="./assets/images/stay-safe-desktop-1x.webp 1x, ./assets/images/stay-safe-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
-                <source srcset="./assets/images/stay-safe-desktop-1x.png 1x, ./assets/images/stay-safe-desktop-2x.png 2x" media="(min-width: 1024px)" />
-
-                <!-- For small screens (mobile) -->
-                <source srcset="./assets/images/stay-safe-mobile-1x.webp 1x, ./assets/images/stay-safe-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
-                <source srcset="./assets/images/stay-safe-mobile-1x.png 1x, ./assets/images/stay-safe-mobile-2x.png 2x" media="(max-width: 1023px)" />
-
-                <!-- Fallback image if webp is not supported -->
-                <img src="./assets/images/stay-safe-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-4" />
-              </picture>
-            </div>
-            <div class="features__text">
-              <h2 class="features__title"
-                >Stay Safe. <br />
-                Stay Compliant.</h2
-              >
-              <p class="features__description"> Gear Locker helps schools stay compliant by tracking the age of gear and documenting regular safety checks. Ensure your equipment meets safety standards, reducing liability risks and protecting your athletes with up-to-date servicing records. </p>
-              <a href="https://calendly.com/cnabity/gearlocker-demo" class="features__cta">Book Your Demo Now</a>
-            </div>
+          <div class="hero__text">
+            <h1 class="hero__title"
+              >Streamline <br />
+              Your Sports Gear <br />
+              Management with <br />
+              GearLocker</h1
+            >
+            <p class="hero__description">Say Goodbye to Manual Spreadsheets — Discover a Smarter, More Efficient Way to Manage, Distribute, and Account for School-Owned Equipment.</p>
+            <a href="https://calendly.com/cnabity/gearlocker-demo" class="hero__cta-button">Book Your Demo Now</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- Features Section -->
+      <section class="features" id="features">
+        <div class="container">
+          <div class="features__header">
+            <h2 class="features__headline">Track, Manage & Reduce Equipment Liability & Costs</h2>
+            <p class="features__subhead">Gear Locker is the ultimate solution for high school sports teams and programs to manage inventory with ease. Our software eliminates the headaches of manually tracking gear, saving your school time and money by ensuring every piece of equipment is accounted for.</p>
+          </div>
+          <div class="features__items">
+            <div class="features__item features__item--efficient">
+              <div class="features__image">
+                <picture>
+                  <!-- For large screens (desktops) -->
+                  <source srcset="./assets/images/efficient-inventory-desktop-1x.webp 1x, ./assets/images/efficient-inventory-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+                  <source srcset="./assets/images/efficient-inventory-desktop-1x.png 1x, ./assets/images/efficient-inventory-desktop-2x.png 2x" media="(min-width: 1024px)" />
 
-    <!-- Benefits Section -->
-    <section class="benefits">
-      <div class="container">
-        <div class="benefits__container">
-          <div class="benefits__item">
-            <div class="benefits__icon">
-              <img src="./assets/images/calendar.svg" alt="Track icon" />
+                  <!-- For small screens (mobile) -->
+                  <source srcset="./assets/images/efficient-inventory-mobile-1x.webp 1x, ./assets/images/efficient-inventory-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+                  <source srcset="./assets/images/efficient-inventory-mobile-1x.png 1x, ./assets/images/efficient-inventory-mobile-2x.png 2x" media="(max-width: 1023px)" />
+
+                  <!-- Fallback image if webp is not supported -->
+                  <img src="./assets/images/efficient-inventory-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-1" />
+                </picture>
+              </div>
+              <div class="features__text">
+                <h2 class="features__title">Efficient Inventory Management</h2>
+                <p class="features__description"> Easily create and manage your entire inventory of sports gear, uniforms, band instruments, and more. </p>
+                <a href="https://calendly.com/cnabity/gearlocker-demo" class="features__cta">Book Your Demo Now</a>
+              </div>
             </div>
-            <p class="benefits__description">Track who has what, and when it's due back, with just a few clicks.</p>
-          </div>
+            <div class="features__item features__item--automated">
+              <div class="features__image">
+                <picture>
+                  <!-- For large screens (desktops) -->
+                  <source srcset="./assets/images/automated-checkout-desktop-1x.webp 1x, ./assets/images/automated-checkout-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+                  <source srcset="./assets/images/automated-checkout-desktop-1x.png 1x, ./assets/images/automated-checkout-desktop-2x.png 2x" media="(min-width: 1024px)" />
 
-          <div class="benefits__item">
-            <div class="benefits__icon">
-              <img src="./assets/images/accountable.svg" alt="Accountability icon" />
+                  <!-- For small screens (mobile) -->
+                  <source srcset="./assets/images/automated-checkout-mobile-1x.webp 1x, ./assets/images/automated-checkout-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+                  <source srcset="./assets/images/automated-checkout-mobile-1x.png 1x, ./assets/images/automated-checkout-mobile-2x.png 2x" media="(max-width: 1023px)" />
+
+                  <!-- Fallback image if webp is not supported -->
+                  <img src="./assets/images/automated-checkout-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-2" />
+                </picture>
+              </div>
+              <div class="features__text">
+                <h2 class="features__title">Automated Check-Out and Check-In</h2>
+                <p class="features__description"> Streamline the process of distributing and collecting gear. No more lost items due to manual errors or oversight. </p>
+                <a href="https://calendly.com/cnabity/gearlocker-demo" class="features__cta">Book Your Demo Now</a>
+              </div>
             </div>
-            <p class="benefits__description">Hold students accountable and reduce the cost of replacing lost items.</p>
-          </div>
+            <div class="features__item features__item--reporting">
+              <div class="features__image">
+                <picture>
+                  <!-- For large screens (desktops) -->
+                  <source srcset="./assets/images/powerful-reporting-desktop-1x.webp 1x, ./assets/images/powerful-reporting-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+                  <source srcset="./assets/images/powerful-reporting-desktop-1x.png 1x, ./assets/images/powerful-reporting-desktop-2x.png 2x" media="(min-width: 1024px)" />
 
-          <div class="benefits__item">
-            <div class="benefits__icon">
-              <img src="./assets/images/realtime.svg" alt="Real-time icon" />
+                  <!-- For small screens (mobile) -->
+                  <source srcset="./assets/images/powerful-reporting-mobile-1x.webp 1x, ./assets/images/powerful-reporting-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+                  <source srcset="./assets/images/powerful-reporting-mobile-1x.png 1x, ./assets/images/powerful-reporting-mobile-2x.png 2x" media="(max-width: 1023px)" />
+
+                  <!-- Fallback image if webp is not supported -->
+                  <img src="./assets/images/powerful-reporting-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-3" />
+                </picture>
+              </div>
+              <div class="features__text">
+                <h2 class="features__title">Powerful Reporting</h2>
+                <p class="features__description"> Generate reports at the team, school, or district level to identify which students have not returned their gear and real time accounting of all inventory. </p>
+                <a href="https://calendly.com/cnabity/gearlocker-demo" class="features__cta">Book Your Demo Now</a>
+              </div>
             </div>
-            <p class="benefits__description">Keep a real-time source of truth for all school-owned property across teams and departments.</p>
-          </div>
+            <div class="features__item features__item--stay-safe">
+              <div class="features__image">
+                <picture>
+                  <!-- For large screens (desktops) -->
+                  <source srcset="./assets/images/stay-safe-desktop-1x.webp 1x, ./assets/images/stay-safe-desktop-2x.webp 2x" type="image/webp" media="(min-width: 1024px)" />
+                  <source srcset="./assets/images/stay-safe-desktop-1x.png 1x, ./assets/images/stay-safe-desktop-2x.png 2x" media="(min-width: 1024px)" />
 
-          <div class="benefits__item">
-            <div class="benefits__icon">
-              <img src="./assets/images/returned.svg" alt="Return icon" />
-            </div>
-            <p class="benefits__description">Ensure that all gear is returned, reducing the need for costly replacements.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+                  <!-- For small screens (mobile) -->
+                  <source srcset="./assets/images/stay-safe-mobile-1x.webp 1x, ./assets/images/stay-safe-mobile-2x.webp 2x" type="image/webp" media="(max-width: 1023px)" />
+                  <source srcset="./assets/images/stay-safe-mobile-1x.png 1x, ./assets/images/stay-safe-mobile-2x.png 2x" media="(max-width: 1023px)" />
 
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-      <div class="container">
-        <h2 class="pricing__title">Pricing Plans</h2>
-
-        <div class="pricing__container">
-          <!-- Individual Teams Plan -->
-          <div class="pricing__card pricing__card--individual">
-            <h3 class="pricing__card-title">For Individual Teams</h3>
-            <p class="pricing__card-subtitle">Best suited for small teams</p>
-            <p class="pricing__price">$199<span>/year</span></p>
-            <p class="pricing__features-title">Key features</p>
-            <ul class="pricing__features-list">
-              <li class="pricing__features-item">Manage your inventory</li>
-              <li class="pricing__features-item">Check in and check out</li>
-              <li class="pricing__features-item">Team reporting</li>
-            </ul>
-            <a href="https://calendly.com/cnabity/gearlocker-demo" class="pricing__cta">Book Your Demo Now</a>
-          </div>
-
-          <!-- Schools Plan -->
-          <div class="pricing__card pricing__card--schools">
-            <h3 class="pricing__card-title">For Schools</h3>
-            <p class="pricing__card-subtitle">Use GearLocker across all your programs</p>
-            <p class="pricing__price">$1,499<span>/year</span></p>
-            <p class="pricing__features-title">Key features</p>
-            <ul class="pricing__features-list">
-              <li class="pricing__features-item">Use GearLocker across all your teams</li>
-              <li class="pricing__features-item">Manage inventory for all sports</li>
-              <li class="pricing__features-item">Assign coaches</li>
-              <li class="pricing__features-item">Check in and check out</li>
-              <li class="pricing__features-item">Both team reporting and school-wide reporting</li>
-            </ul>
-            <a href="https://calendly.com/cnabity/gearlocker-demo" class="pricing__cta pricing__cta--schools">Book Your Demo Now</a>
-          </div>
-
-          <!-- Districts Plan -->
-          <div class="pricing__card pricing__card--districts">
-            <h3 class="pricing__card-title">For Districts</h3>
-            <p class="pricing__card-subtitle">Bring GearLocker to the entire district</p>
-            <p class="pricing__price">Contact for Pricing</p>
-            <p class="pricing__features-title">Key features</p>
-            <ul class="pricing__features-list">
-              <li class="pricing__features-item">Use GearLocker across all your schools</li>
-              <li class="pricing__features-item">Manage inventory for all sports</li>
-              <li class="pricing__features-item">Assign coaches</li>
-              <li class="pricing__features-item">Check in and check out</li>
-              <li class="pricing__features-item">Team, school, and district-wide reporting</li>
-            </ul>
-            <a href="https://calendly.com/cnabity/gearlocker-demo" class="pricing__cta pricing__cta--contact">Get in Touch</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-      <div class="container">
-        <h2 class="faq__title">FAQs</h2>
-        <div class="faq__items__wrapper">
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
-              <span>What is Gear Locker?</span>
-            </button>
-            <div class="faq__answer">
-              <p>Gear Locker is a powerful software platform designed to help schools and sports programs efficiently manage inventory. It simplifies the process of tracking and managing school-owned gear by replacing error-prone spreadsheets with an automated, user-friendly system. </p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
-              <span>How does Gear Locker simplify inventory management?</span>
-            </button>
-            <div class="faq__answer">
-              <p>Gear Locker allows schools and teams to build a digital inventory of all equipment, from sports gear to band instruments. The software streamlines the check-out and check-in process, so coaches, administrators, and teachers always know which students are responsible for specific items—saving time and reducing manual errors. </p>
-            </div>
-          </div>
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
-              <span>Can Gear Locker help prevent lost items?</span>
-            </button>
-            <div class="faq__answer">
-              <p>Yes! With Gear Locker, you can easily track who has what gear and when it’s due back. Automated reminders and detailed reports ensure items are returned on time, reducing the risk of lost or unaccounted-for equipment. </p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
-              <span>What types of equipment can I manage with Gear Locker?</span>
-            </button>
-            <div class="faq__answer">
-              <p>Gear Locker can manage any type of school-owned equipment, including football pads, band instruments, team uniforms, jerseys, warmups, and more. If it’s an item that needs to be tracked, Gear Locker makes it simple. </p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
-              <span>How does reporting work in Gear Locker?</span>
-            </button>
-            <div class="faq__answer">
-              <p>Gear Locker offers powerful reporting tools that allow you to track gear status at the team, school, or district level. Generate reports to see which students still have items checked out and quickly identify missing or overdue equipment. These insights help keep your inventory organized and up-to-date. </p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
-              <span>Will using Gear Locker save my school money?</span>
-            </button>
-            <div class="faq__answer">
-              <p>Absolutely! By improving accountability and minimizing lost or unreturned gear, Gear Locker helps schools reduce unnecessary replacement costs. With accurate tracking and better inventory management, schools can avoid purchasing duplicate or missing items. </p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
-              <span>Is there a free demo available?</span>
-            </button>
-            <div class="faq__answer">
-              <p>Yes! We offer a free, no-obligation demo to show you how Gear Locker can transform your inventory management process. During the demo, you’ll get a personalized tour of the platform and see firsthand how it works. </p>
-            </div>
-          </div>
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
-              <span>How can I book a demo?</span>
-            </button>
-            <div class="faq__answer">
-              <p>Booking a demo is quick and easy! Just click the “Book Your Demo Now” button on our website and choose a time that works best for you. Our team will walk you through the system and answer any questions you have. </p>
+                  <!-- Fallback image if webp is not supported -->
+                  <img src="./assets/images/stay-safe-desktop-1x.png" alt="Efficient Inventory" class="features__image-img features__image--img-4" />
+                </picture>
+              </div>
+              <div class="features__text">
+                <h2 class="features__title"
+                  >Stay Safe. <br />
+                  Stay Compliant.</h2
+                >
+                <p class="features__description"> Gear Locker helps schools stay compliant by tracking the age of gear and documenting regular safety checks. Ensure your equipment meets safety standards, reducing liability risks and protecting your athletes with up-to-date servicing records. </p>
+                <a href="https://calendly.com/cnabity/gearlocker-demo" class="features__cta">Book Your Demo Now</a>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Add more FAQ items as needed -->
-      </div>
-    </section>
-    <!-- Demo Callout -->
-    <section class="demo-callout">
-      <div class="container">
-        <div class="demo-callout__wrapper">
-          <img src="./assets/images/gearlocker-logo.svg" alt="gearlocker logo" class="demo-callout__logo" />
-          <h2 class="demo-callout__title">Ready to Make Gear Management Effortless?</h2>
-          <p class="demo-callout__description">Schedule a free demo today and see how Gear Locker can transform your school’s equipment management process.</p>
-          <a href="https://calendly.com/cnabity/gearlocker-demo" class="demo-callout__button">Book Your Demo Now</a>
+      <!-- Benefits Section -->
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__container">
+            <div class="benefits__item">
+              <div class="benefits__icon">
+                <img src="./assets/images/calendar.svg" alt="Track icon" />
+              </div>
+              <p class="benefits__description">Track who has what, and when it's due back, with just a few clicks.</p>
+            </div>
+
+            <div class="benefits__item">
+              <div class="benefits__icon">
+                <img src="./assets/images/accountable.svg" alt="Accountability icon" />
+              </div>
+              <p class="benefits__description">Hold students accountable and reduce the cost of replacing lost items.</p>
+            </div>
+
+            <div class="benefits__item">
+              <div class="benefits__icon">
+                <img src="./assets/images/realtime.svg" alt="Real-time icon" />
+              </div>
+              <p class="benefits__description">Keep a real-time source of truth for all school-owned property across teams and departments.</p>
+            </div>
+
+            <div class="benefits__item">
+              <div class="benefits__icon">
+                <img src="./assets/images/returned.svg" alt="Return icon" />
+              </div>
+              <p class="benefits__description">Ensure that all gear is returned, reducing the need for costly replacements.</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2 class="pricing__title">Pricing Plans</h2>
+
+          <div class="pricing__container">
+            <!-- Individual Teams Plan -->
+            <div class="pricing__card pricing__card--individual">
+              <h3 class="pricing__card-title">For Individual Teams</h3>
+              <p class="pricing__card-subtitle">Best suited for small teams</p>
+              <p class="pricing__price">$199<span>/year</span></p>
+              <p class="pricing__features-title">Key features</p>
+              <ul class="pricing__features-list">
+                <li class="pricing__features-item">Manage your inventory</li>
+                <li class="pricing__features-item">Check in and check out</li>
+                <li class="pricing__features-item">Team reporting</li>
+              </ul>
+              <a href="https://calendly.com/cnabity/gearlocker-demo" class="pricing__cta">Book Your Demo Now</a>
+            </div>
+
+            <!-- Schools Plan -->
+            <div class="pricing__card pricing__card--schools">
+              <h3 class="pricing__card-title">For Schools</h3>
+              <p class="pricing__card-subtitle">Use GearLocker across all your programs</p>
+              <p class="pricing__price">$1,499<span>/year</span></p>
+              <p class="pricing__features-title">Key features</p>
+              <ul class="pricing__features-list">
+                <li class="pricing__features-item">Use GearLocker across all your teams</li>
+                <li class="pricing__features-item">Manage inventory for all sports</li>
+                <li class="pricing__features-item">Assign coaches</li>
+                <li class="pricing__features-item">Check in and check out</li>
+                <li class="pricing__features-item">Both team reporting and school-wide reporting</li>
+              </ul>
+              <a href="https://calendly.com/cnabity/gearlocker-demo" class="pricing__cta pricing__cta--schools">Book Your Demo Now</a>
+            </div>
+
+            <!-- Districts Plan -->
+            <div class="pricing__card pricing__card--districts">
+              <h3 class="pricing__card-title">For Districts</h3>
+              <p class="pricing__card-subtitle">Bring GearLocker to the entire district</p>
+              <p class="pricing__price">Contact for Pricing</p>
+              <p class="pricing__features-title">Key features</p>
+              <ul class="pricing__features-list">
+                <li class="pricing__features-item">Use GearLocker across all your schools</li>
+                <li class="pricing__features-item">Manage inventory for all sports</li>
+                <li class="pricing__features-item">Assign coaches</li>
+                <li class="pricing__features-item">Check in and check out</li>
+                <li class="pricing__features-item">Team, school, and district-wide reporting</li>
+              </ul>
+              <a href="https://calendly.com/cnabity/gearlocker-demo" class="pricing__cta pricing__cta--contact">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq">
+        <div class="container">
+          <h2 class="faq__title">FAQs</h2>
+          <div class="faq__items__wrapper">
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+                <span>What is Gear Locker?</span>
+              </button>
+              <div class="faq__answer">
+                <p>Gear Locker is a powerful software platform designed to help schools and sports programs efficiently manage inventory. It simplifies the process of tracking and managing school-owned gear by replacing error-prone spreadsheets with an automated, user-friendly system. </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+                <span>How does Gear Locker simplify inventory management?</span>
+              </button>
+              <div class="faq__answer">
+                <p>Gear Locker allows schools and teams to build a digital inventory of all equipment, from sports gear to band instruments. The software streamlines the check-out and check-in process, so coaches, administrators, and teachers always know which students are responsible for specific items—saving time and reducing manual errors. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+                <span>Can Gear Locker help prevent lost items?</span>
+              </button>
+              <div class="faq__answer">
+                <p>Yes! With Gear Locker, you can easily track who has what gear and when it’s due back. Automated reminders and detailed reports ensure items are returned on time, reducing the risk of lost or unaccounted-for equipment. </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+                <span>What types of equipment can I manage with Gear Locker?</span>
+              </button>
+              <div class="faq__answer">
+                <p>Gear Locker can manage any type of school-owned equipment, including football pads, band instruments, team uniforms, jerseys, warmups, and more. If it’s an item that needs to be tracked, Gear Locker makes it simple. </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+                <span>How does reporting work in Gear Locker?</span>
+              </button>
+              <div class="faq__answer">
+                <p>Gear Locker offers powerful reporting tools that allow you to track gear status at the team, school, or district level. Generate reports to see which students still have items checked out and quickly identify missing or overdue equipment. These insights help keep your inventory organized and up-to-date. </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+                <span>Will using Gear Locker save my school money?</span>
+              </button>
+              <div class="faq__answer">
+                <p>Absolutely! By improving accountability and minimizing lost or unreturned gear, Gear Locker helps schools reduce unnecessary replacement costs. With accurate tracking and better inventory management, schools can avoid purchasing duplicate or missing items. </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+                <span>Is there a free demo available?</span>
+              </button>
+              <div class="faq__answer">
+                <p>Yes! We offer a free, no-obligation demo to show you how Gear Locker can transform your inventory management process. During the demo, you’ll get a personalized tour of the platform and see firsthand how it works. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                <span class="faq__icon"><img src="./assets/images/question-mark.svg" alt="" /></span>
+                <span>How can I book a demo?</span>
+              </button>
+              <div class="faq__answer">
+                <p>Booking a demo is quick and easy! Just click the “Book Your Demo Now” button on our website and choose a time that works best for you. Our team will walk you through the system and answer any questions you have. </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more FAQ items as needed -->
+        </div>
+      </section>
+      <!-- Demo Callout -->
+      <section class="demo-callout">
+        <div class="container">
+          <div class="demo-callout__wrapper">
+            <img src="./assets/images/gearlocker-logo.svg" alt="gearlocker logo" class="demo-callout__logo" />
+            <h2 class="demo-callout__title">Ready to Make Gear Management Effortless?</h2>
+            <p class="demo-callout__description">Schedule a free demo today and see how Gear Locker can transform your school’s equipment management process.</p>
+            <a href="https://calendly.com/cnabity/gearlocker-demo" class="demo-callout__button">Book Your Demo Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -378,6 +382,28 @@
         </div>
       </div>
     </footer>
+    <aside>
+      <!-- Modal -->
+      <div class="modal" id="login-modal">
+        <div class="modal__content">
+          <span class="modal__close" id="close-modal-btn">&times;</span>
+          <div class="modal__body">
+            <div class="modal__header">
+              <img src="./assets/images/logo.svg" alt="Gearlocker Logo" class="modal__logo" />
+              <h2 class="modal__title">Sign In</h2>
+            </div>
+            <form class="modal__form">
+              <input type="email" class="modal__input" placeholder="john.smith@gmail.com" autocomplete="username" required />
+              <input type="password" class="modal__input" placeholder="Password" autocomplete="current-password" required />
+              <button type="submit" class="modal__btn modal__btn--signin">Sign In</button>
+            </form>
+            <div class="modal__divider"><span>or</span></div>
+            <button class="modal__btn modal__btn--google">Sign in with Google <img src="./assets/images/Google__G__logo.svg" alt="Google Logo" class="modal__google-icon" /></button>
+            <p class="modal__signup">Don't have an account? <a href="#" class="modal__signup-link">Sign Up</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
 
     <!-- Script for mobile menu-->
     <script>
@@ -427,29 +453,23 @@
     </script>
     <!-- Pop up modal -->
     <script>
-      // Get the modal
       const modal = document.getElementById('login-modal');
-
-      // Get the button that opens the modal
       const openModalBtn = document.getElementById('open-modal-btn');
-
-      // Get the <span> element that closes the modal
       const closeModalBtn = document.getElementById('close-modal-btn');
 
-      // When the user clicks on the button, open the modal
       openModalBtn.addEventListener('click', () => {
         modal.style.display = 'flex';
+        body.classList.toggle('body--menu-open');
       });
-
-      // When the user clicks on <span> (x), close the modal
       closeModalBtn.addEventListener('click', () => {
         modal.style.display = 'none';
+        body.classList.remove('body--menu-open');
       });
-
       // When the user clicks anywhere outside of the modal, close it
       window.addEventListener('click', (e) => {
         if (e.target == modal) {
           modal.style.display = 'none';
+          body.classList.remove('body--menu-open');
         }
       });
     </script>
