@@ -78,7 +78,7 @@ textarea {
   border-radius: 10px 0 0 10px;
   min-height: 100svh;
   max-height: 100svh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .header__nav--active {
